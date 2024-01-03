@@ -1,0 +1,82 @@
+.main{
+    &__section{
+        margin-top: 80px;
+        &__forms{
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 60px;
+            &__form{
+                &__inp{
+                    border: none;
+                    border-bottom: 1px solid black;
+                    width: 574px;
+                    margin-bottom: 50px;
+                }
+            }
+        }
+        &__bottom__form{
+            &__inp{
+                border: none;
+                border-bottom: 1px solid black;
+                width: 100%;
+                margin-bottom: 50px;
+            }
+        }
+        &__btn__div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 50px;
+            &__btn{
+                border-radius: 10px;
+                width: 240px;
+                height: 60px;
+            }
+        }
+    }
+}
+@media (max-width:700px){
+    .main{
+        &__section{
+            margin-top: 80px;
+            &__h2{
+                margin-left: 15px;
+            }
+            &__forms{
+                gap: 50px;
+                margin-top: 60px;
+                &__form{
+                    &__inp{
+                        border: none;
+                        border-bottom: 1px solid black;
+                        width: 100%;
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+            &__bottom__form{
+                margin-left: 10px;
+                margin-right: 10px;
+                &__inp{
+                    border: none;
+                    border-bottom: 1px solid black;
+                    width: 100%;
+                    margin-bottom: 50px;
+                }
+            }
+            &__btn__div{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 50px;
+                &__btn{
+                    border-radius: 10px;
+                    width: 240px;
+                    height: 60px;
+                }
+            }
+        }
+    }
+}

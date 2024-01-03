@@ -1,0 +1,104 @@
+.main{
+    &__section__projects{
+        &__div{
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            &__work{
+                padding-left: 30px;
+                padding-right: 30px;
+                padding-top: 14px;
+                background-image: url(../images/desktop-wallpaper-50-desk-setup-computer-table-thumbnail.jpg);
+                width: 360px;
+                height: 455px;
+                border-radius: 20px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                &_h3{
+                    color: white;
+                    font-size: 20px;
+                    font-weight: 700;
+                    word-wrap: break-word;
+                    width: 300px;
+                    height: 42px;
+                }
+                &_p{
+                    color: white;
+                    font-size: 16px;
+                    word-wrap: break-word;
+                    margin-top: 20px;
+                }
+            }
+            &__work__second{
+                padding-left: 30px;
+                border-radius: 20px;
+                padding-right: 30px;
+                padding-top: 14px;
+                background-image: url(../images/photo_2023-08-02_20-56-51.jpg);
+                width: 360px;
+                height: 455px;
+                &_h3{
+                    color: white;
+                    font-size: 20px;
+                    font-weight: 700;
+                    word-wrap: break-word;
+                    width: 300px;
+                    height: 42px;
+                }
+                &_p{
+                    color: white;
+                    font-size: 16px;
+                    word-wrap: break-word;
+                    margin-top: 20px;
+                }
+            }
+            &__work__over{
+                padding-left: 30px;
+                padding-right: 30px;
+                padding-top: 14px;
+                border-radius: 20px;
+                background-repeat: no-repeat;
+                background-image: url(../images/photo_2023-12-11_15-23-50.jpg);
+                width: 360px;
+                height: 455px;
+                &_h3{
+                    color: white;
+                    font-size: 20px;
+                    font-weight: 700;
+                    word-wrap: break-word;
+                    width: 300px;
+                    height: 42px;
+                }
+                &_p{
+                    color: white;
+                    font-size: 16px;
+                    word-wrap: break-word;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    &__section__btn{
+        &__div{
+            margin-top: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &__btn{
+                border-radius: 10px;
+                width: 240px;
+                height: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &__a{
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
