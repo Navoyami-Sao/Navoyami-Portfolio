@@ -29,6 +29,26 @@ li {
   width: 80px;
   height: 80px;
 }
+.header__section__nav__im {
+  width: 80px;
+  height: 80px;
+  display: none;
+}
+.header__section__nav__ul {
+  display: flex;
+  gap: 30px;
+}
+.header__section__nav__ul__li {
+  list-style: none;
+}
+.header__section__nav__ul__li__a {
+  text-decoration: none;
+  color: white;
+  transition: 1s;
+}
+.header__section__nav__ul__li__a:hover {
+  color: aqua;
+}
 .header .header__section__h1 {
   display: flex;
   justify-content: center;
@@ -55,13 +75,38 @@ li {
     justify-content: space-between;
     align-items: center;
   }
+  .header__section__nav__img {
+    width: 60px;
+    height: 60px;
+  }
+  .header__section__nav__im {
+    display: block;
+    width: 60px;
+    height: 60px;
+  }
+  .header__section__nav__ul {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    background: black;
+  }
+  .header__section__nav__ul__li {
+    padding: 25px;
+  }
+  .header__section__nav__ul #menuList {
+    transition: all 1s;
+  }
   .header .header__section__h1 {
     display: flex;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 250px;
     text-align: center;
     color: white;
-    font-size: 66px;
+    font-size: 65px;
     font-weight: 400;
     word-wrap: break-word;
   }
@@ -70,7 +115,7 @@ li {
     justify-content: center;
     text-align: center;
     color: white;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 400;
     letter-spacing: 11.52px;
     word-wrap: break-word;
@@ -138,82 +183,32 @@ li {
   gap: 5px;
 }
 .main__section__projects__div {
-  margin-top: 200px;
+  margin-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: 10px;
   flex-wrap: wrap;
 }
-.main__section__projects__div__work {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 14px;
-  background-image: url(../images/photo_2023-12-11_15-23-50.jpg);
-  width: 360px;
-  height: 455px;
-  border-radius: 20px;
+.main__section__projects__div__arrovs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
-.main__section__projects__div__work_h3 {
-  color: white;
-  font-size: 20px;
+.main__section__projects__div__arrovs__span {
   font-weight: 700;
-  word-wrap: break-word;
-  width: 300px;
-  height: 42px;
+  font-size: 24px;
+  padding-bottom: 5px;
 }
-.main__section__projects__div__work_p {
-  color: white;
-  font-size: 16px;
-  word-wrap: break-word;
-  margin-top: 20px;
-}
-.main__section__projects__div__work__second {
-  padding-left: 30px;
-  border-radius: 20px;
-  padding-right: 30px;
-  padding-top: 14px;
-  background-image: url(../images/photo_2023-08-02_20-56-51.jpg);
-  width: 360px;
-  height: 455px;
-}
-.main__section__projects__div__work__second_h3 {
-  color: white;
-  font-size: 20px;
+.main__section__projects__div__arrovs__spann {
   font-weight: 700;
-  word-wrap: break-word;
-  width: 300px;
-  height: 42px;
+  font-size: 24px;
+  padding-bottom: 5px;
 }
-.main__section__projects__div__work__second_p {
-  color: white;
-  font-size: 16px;
-  word-wrap: break-word;
-  margin-top: 20px;
-}
-.main__section__projects__div__work__over {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 14px;
-  border-radius: 20px;
-  background-repeat: no-repeat;
-  background-image: url(../images/desktop-wallpaper-50-desk-setup-computer-table-thumbnail.jpg);
-  width: 360px;
-  height: 455px;
-}
-.main__section__projects__div__work__over_h3 {
-  color: white;
-  font-size: 20px;
-  font-weight: 700;
-  word-wrap: break-word;
-  width: 300px;
-  height: 42px;
-}
-.main__section__projects__div__work__over_p {
-  color: white;
-  font-size: 16px;
-  word-wrap: break-word;
-  margin-top: 20px;
+.main__section__projects__div__work__img {
+  width: 1400px;
+  height: 660px;
 }
 .main__section__btn__div {
   margin-top: 80px;
@@ -229,6 +224,81 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.main__modal {
+  position: fixed;
+  top: 0;
+  left: 20px;
+  z-index: 1050;
+  display: none;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  overflow: hidden;
+}
+.main__modal__dialog {
+  max-width: 500px;
+  margin: 40px auto;
+}
+.main__modal__dialog__content {
+  position: relative;
+  width: 100%;
+  padding: 40px;
+  background-color: gray;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+.main__modal__dialog__content__close {
+  position: absolute;
+  top: 8px;
+  right: 14px;
+  font-size: 30px;
+  color: #000;
+  opacity: 0.5;
+  font-weight: 700;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.main__modal__dialog__content__title {
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.main__modal__dialog__content__input {
+  display: block;
+  margin: 20px auto 20px auto;
+  width: 280px;
+  height: 50px;
+  background: #303030;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  padding: 0 20px;
+  outline: 0;
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+  color: #fff;
+}
+.main__modal__dialog__content__modal_btn {
+  display: block;
+  margin: 20px auto 20px auto;
+  width: 280px;
+  height: 50px;
+  font-size: 18px;
+  padding: 8px 40px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.main .hide {
+  display: none;
+}
+.main .show {
+  display: block;
 }
 
 @media (max-width: 700px) {
@@ -285,77 +355,11 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 10px;
   }
-  .main__section__projects__div__work {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 14px;
-    background-image: url(../images/photo_2023-12-11_15-23-50.jpg);
-    width: 360px;
-    height: 455px;
-    border-radius: 20px;
-  }
-  .main__section__projects__div__work_h3 {
-    color: white;
-    font-size: 20px;
-    font-weight: 700;
-    word-wrap: break-word;
-    width: 300px;
-    height: 42px;
-  }
-  .main__section__projects__div__work_p {
-    color: white;
-    font-size: 16px;
-    word-wrap: break-word;
-    margin-top: 20px;
-  }
-  .main__section__projects__div__work__second {
-    padding-left: 30px;
-    border-radius: 20px;
-    padding-right: 30px;
-    padding-top: 14px;
-    background-image: url(../images/photo_2023-08-02_20-56-51.jpg);
-    width: 360px;
-    height: 455px;
-  }
-  .main__section__projects__div__work__second_h3 {
-    color: white;
-    font-size: 20px;
-    font-weight: 700;
-    word-wrap: break-word;
-    width: 300px;
-    height: 42px;
-  }
-  .main__section__projects__div__work__second_p {
-    color: white;
-    font-size: 16px;
-    word-wrap: break-word;
-    margin-top: 20px;
-  }
-  .main__section__projects__div__work__over {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 14px;
-    border-radius: 20px;
-    background-repeat: no-repeat;
-    background-image: url(../images/desktop-wallpaper-50-desk-setup-computer-table-thumbnail.jpg);
-    width: 360px;
-    height: 455px;
-  }
-  .main__section__projects__div__work__over_h3 {
-    color: white;
-    font-size: 20px;
-    font-weight: 700;
-    word-wrap: break-word;
-    width: 300px;
-    height: 42px;
-  }
-  .main__section__projects__div__work__over_p {
-    color: white;
-    font-size: 16px;
-    word-wrap: break-word;
-    margin-top: 20px;
+  .main__section__projects__div__work__img {
+    width: 390px;
+    height: 380px;
   }
   .main__section__btn__div {
     margin-top: 80px;
@@ -371,6 +375,81 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .main__modal {
+    position: fixed;
+    top: 0;
+    left: 20px;
+    z-index: 1050;
+    display: none;
+    width: 90%;
+    height: 100vh;
+    align-items: center;
+    overflow: hidden;
+  }
+  .main__modal__dialog {
+    max-width: 500px;
+    margin: 40px auto;
+  }
+  .main__modal__dialog__content {
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    background-color: gray;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  .main__modal__dialog__content__close {
+    position: absolute;
+    top: 8px;
+    right: 14px;
+    font-size: 30px;
+    color: #000;
+    opacity: 0.5;
+    font-weight: 700;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .main__modal__dialog__content__title {
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+  .main__modal__dialog__content__input {
+    display: block;
+    margin: 20px auto 20px auto;
+    width: 280px;
+    height: 50px;
+    background: #303030;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    padding: 0 20px;
+    outline: 0;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    color: #fff;
+  }
+  .main__modal__dialog__content__modal_btn {
+    display: block;
+    margin: 20px auto 20px auto;
+    width: 280px;
+    height: 50px;
+    font-size: 18px;
+    padding: 8px 40px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .main .hide {
+    display: none;
+  }
+  .main .show {
+    display: block;
   }
 }
 .footer {

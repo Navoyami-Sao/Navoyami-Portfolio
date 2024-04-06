@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NAVOYAMI SAO</title>
+    <title>UZKVU</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;400;500;600;700&display=swap" rel="stylesheet">
@@ -14,15 +14,42 @@
 </head>
 <body>
     <!-- header-start -->
-        <header class="header" style="width: 100%; height: 810px; background: black" id="header">
+        <header id="header" class="header" style="width: 100%; height: 810px; background: black" id="header">
             <div class="container">
             <section class="header__section">
                 <nav class="header__section__nav">
                 <img src="./images/rpLogoWhite.png" alt="" class="header__section__nav__img">
-                    <img src="./images/Group 6.png" alt="" class="header__section__nav_ img" style="cursor: pointer;">
+                <img src="./images/menuu.svg" alt="" class="header__section__nav__im" style="cursor: pointer;" onclick="toggleMenu()">
+                <ul id="menuList" class="header__section__nav__ul">
+                    <li class="header__section__nav__ul__li">
+                        <a href="#header" class="header__section__nav__ul__li__a">
+                            HOME
+                        </a>
+                    </li>
+                    <li class="header__section__nav__ul__li">
+                        <a href="#" class="header__section__nav__ul__li__a" style="transition: all 1s;">
+                            SERVICES
+                        </a>
+                    </li>
+                    <li class="header__section__nav__ul__li">
+                        <a href="./contact.html" class="header__section__nav__ul__li__a">
+                            CONTACT
+                        </a>
+                    </li>
+                    <li class="header__section__nav__ul__li">
+                        <a href="./about.html" class="header__section__nav__ul__li__a">
+                            ABOUT
+                        </a>
+                    </li>
+                    <li class="header__section__nav__ul__li">
+                        <a href="./projects.html" class="header__section__nav__ul__li__a">
+                            PROJECTS
+                        </a>
+                    </li>
+                </ul>
                 </nav>
             </section>
-            <h1 class="header__section__h1">NAVOYAMI SAO</h1>
+            <h1 class="header__section__h1">U.UZKVU</h1>
             <h3 class="header__section__h3">
                 WEB-DESIGNER
            </h3>
@@ -38,7 +65,7 @@
                         About me
                     </h2>
                     <p class="main__about__section__div_p">
-                        I'm Azzamov Abdulhamid, I'm 16 years old, a young web developer, I've been interested in becoming a programmer and learning languages since I was young. Now I'm studying web programming at the "Coddy" educational center and English at the English School. To be honest, I want to go to another country and live there in the future, because this is one of my big dreams. I have many dreams and goals for the future as well. Thank you for reading about me. Bless you!!
+                        I'm Uzakov Ulug'bek, I'm 16 years old, a young web developer, I've been interested in becoming a programmer and learning languages since I was young. Now I'm studying web programming at the "Coddy" educational center and English at the English School. To be honest, I want to go to another country and live there in the future, because this is one of my big dreams. I have many dreams and goals for the future as well. Thank you for reading about me. Bless you!!
                     </p>
                 </div>
             </section>
@@ -115,45 +142,70 @@
             </section>
             <section class="main__section__projects">
                 <div class="main__section__projects__div">
+                    <!-- 1 -->
                     <div class="main__section__projects__div__work">
-                        <p class="main__section__projects__div__work_h3">
-                            Always Work - Dont Stop From Grow up
-                        </p>
-                        <p class="main__section__projects__div__work_p">
-                            Here are the Tech’s used
-                        </p>
+                        <img class="main__section__projects__div__work__img" src="./images/images1.jpg" alt="">
                     </div>
-                    <div class="main__section__projects__div__work__second">
-                        <p class="main__section__projects__div__work__second_h3">
-                            Always Work - Dont Stop From Grow up
-                        </p>
-                        <p class="main__section__projects__div__work__second_p">
-                            Here are the Tech’s used
-                        </p>
+                    <!-- 2 -->
+                    <div class="main__section__projects__div__work">
+                        <img class="main__section__projects__div__work__img" src="./images/images2.jpg" alt="">
                     </div>
-                    <div class="main__section__projects__div__work__over">
-                        <p class="main__section__projects__div__work__over_h3">
-                            Always Work - Dont Stop From Grow up
-                        </p>
-                        <p class="main__section__projects__div__work__over_p">
-                            Here are the Tech’s used
-                        </p>
+                    <!-- 3 -->
+                    <div class="main__section__projects__div__work">
+                        <img class="main__section__projects__div__work__img" src="./images/images3.jpg" alt="">
+                    </div>
+                    <div class="main__section__projects__div__arrovs">
+                        <div class="main__section__projects__div__arrovs__back">
+                            <img src="./images/leftarrov.svg" alt="">
+                        </div>
+                        <span class="main__section__projects__div__arrovs__span">01</span>/<span class="main__section__projects__div__arrovs__spann">03</span>
+                        <div class="main__section__projects__div__arrovs__forvard">
+                            <img src="./images/rightarrov.svg" alt="">
+                        </div>
                     </div>
                 </div>
             </section>
             <section class="main__section__btn">
                 <div class="main__section__btn__div">
-                    <button class="main__section__btn__div__btn">
+                    <button data-btn class="main__section__btn__div__btn">
                         <img src="./images/Arrow right.png" alt="">
-                        <a style="color: black;" href="./projects.html">All Projects</a>
+                        <a style="color: black;"  href="#">All Projects</a>
                     </button>
-                    <button class="main__section__btn__div__btn">
+                    <button data-btn class="main__section__btn__div__btn">
                         <img src="./images/Arrow right.png" alt="">
-                        <a style="color: black;" href="./contact.html">Contact Me</a>
+                        <a  style="color: black;" href="#">Contact Me</a>
                     </button>
                 </div>
             </section>
         </div>
+         <!-- modal -->
+    <div class="main__modal">
+        <div class="main__modal__dialog">
+          <div class="main__modal__dialog__content">
+            <form action="#">
+              <div class="main__modal__dialog__content__close">&times;</div>
+              <div class="main__modal__dialog__content__title">
+                tez orada sizga aloqaga chiqamiz
+              </div>
+              <input
+                required
+                placeholder="Ismingiz"
+                name="name"
+                type="text"
+                class="main__modal__dialog__content__input"
+              />
+              <input  
+                required
+                placeholder="Telefon raqamingiz"
+                name="phone"
+                type="phone"
+                class="main__modal__dialog__content__input"
+              />
+              <button class="main__modal__dialog__content__modal_btn">Jo'natish</button>
+            </form>
+          </div>
+        </div>
+      </div>
         </main>
     <!-- main-ended -->
     <!-- footer-start -->
@@ -200,4 +252,5 @@
         </footer>
     <!-- footer-ended -->
 </body>
+<script src="./js/app.js"></script>
 </html>

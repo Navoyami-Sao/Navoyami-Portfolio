@@ -26,6 +26,26 @@ li{
                 width: 80px;
                 height: 80px;
             }
+            &__im{
+                width: 80px;
+                height: 80px;
+                display: none;
+            }
+            &__ul{
+                display: flex;
+                gap: 30px;
+                &__li{
+                    list-style: none;
+                    &__a{
+                        text-decoration: none;
+                        color: white;
+                        transition: 1s;
+                    }
+                    &__a:hover{
+                        color: aqua;
+                    }
+                }
+            }
         }
     }
     .header__section__h1{
@@ -55,15 +75,40 @@ li{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                &__img{
+                    width: 60px;
+                    height: 60px;
+                }
+                &__im{
+                    display: block;
+                    width: 60px;
+                    height: 60px;
+                }
+                &__ul{
+                    position: absolute;
+                    top: 80px;
+                    left: 0;
+                    right: 0;
+                    flex-direction: column;
+                    text-align: center;
+                    overflow: hidden;
+                    background: black;
+                    &__li{
+                        padding: 25px;
+                    }
+                    #menuList{
+                        transition: all 1s;
+                    }
+                }
             }
         }
         .header__section__h1{
             display: flex;
             justify-content: center;
-            margin-top: 200px;
+            margin-top: 250px;
             text-align: center;
             color: white;
-            font-size: 66px;
+            font-size: 65px;
             font-weight: 400;
             word-wrap: break-word
         }
@@ -72,7 +117,7 @@ li{
             justify-content: center;
             text-align: center;
             color: white;
-            font-size: 30px;
+            font-size: 28px;
             font-weight: 400;
             letter-spacing: 11.52px;
             word-wrap: break-word
